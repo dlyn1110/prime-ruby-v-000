@@ -1,9 +1,4 @@
 def prime?(num)
-  (1...100).each do |num|
-  if (1..num).select { |d| num % d == 0 }
-    return true
-  else
-    false
-  end
-end
+  arr = (2..number).to_a.select {|i| number % i == 0}
+  arr.length == 1 ? true : false
 end
